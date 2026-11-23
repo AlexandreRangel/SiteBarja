@@ -27,7 +27,11 @@
     link("index.html", "Início", "home") +
     link("tumulto-iii.html", "Tumulto III", "tumulto") +
     link("antologia.html", "Antologia", "antologia") +
+    link("obras.html", "Obras", "obras") +
+    link("exposicoes.html", "Exposições", "exposicoes") +
+    link("curadorias.html", "Curadorias", "curadorias") +
     link("publicacoes.html", "Publicações", "publicacoes") +
+    link("projetos.html", "Projetos", "projetos") +
     link("citacoes.html", "Citações", "citacoes") +
     "      </ul>" +
     "    </nav>" +
@@ -37,8 +41,8 @@
   var footerHTML =
     '<footer class="site-footer">' +
     '  <div class="container">' +
-    "    <span>Site de Wagner Barja</span>" +
-    "    <span>1985 — presente</span>" +
+    '    <span>Site de Wagner Barja</span>' +
+    '    <span><a rel="noreferrer" target="_blank" href="http://lattes.cnpq.br/3271219304383451">Currículo Lattes</a></span>' +
     "  </div>" +
     "</footer>";
 

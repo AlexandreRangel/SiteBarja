@@ -4,11 +4,20 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Experiência Tumulto III — Wagner Barja</title>
-<meta name="description" content="O livro digital da exposição Experiência Tumulto III, de Wagner Barja, com todas as obras, textos e imagens em alta resolução." />
+<meta name="description" content="O livro digital da exposição Experiência Tumulto III, de Wagner Barja: todas as obras, textos e imagens em alta resolução." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/css/style.css" />
+<style>
+  .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+  .gallery figure { margin: 0; }
+  .gallery img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+  .section--work { scroll-margin-top: 5.5rem; border-bottom: 1px solid var(--line); }
+  .book-text { margin-top: 1rem; max-width: var(--maxw); }
+  .book-text p { font-size: 1.08rem; }
+  @media (max-width: 640px) { .gallery { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); } }
+</style>
 </head>
 <body data-page="tumulto">
 <a class="skip-link" href="#main">Pular para o conteúdo</a>
@@ -17,29 +26,485 @@
 <main id="main">
   <section class="page-head">
     <div class="container">
-      <p class="kicker">Experiência</p>
+      <p class="kicker">Experiência · CCBB Brasília, 2015</p>
       <h1>Tumulto III</h1>
-      <p class="lede">
-        A antologia da obra de Wagner Barja (1985–2015) publicada por ocasião da grande exposição
-        no Centro Cultural Banco do Brasil. Aqui, o livro vira site: cada obra tem seu espaço,
-        com texto e imagem em alta resolução.
-      </p>
+      <p class="lede">A antologia da obra de Wagner Barja (1985–2015), publicada por ocasião da exposição no Centro Cultural Banco do Brasil. Aqui o livro vira site: cada obra tem seu espaço, com textos e imagens em alta resolução.</p>
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container">
+      <h2>A exposição</h2>
+      <p>O Ministério da Cultura e o Banco do Brasil apresentam <em>Experiência Tumulto III</em>, um panorama da produção artística de Wagner Barja, artista radicado na capital federal. A mostra revela uma obra “altamente coesa” que, constituída ao longo de três décadas, sempre foi marcada pelo caráter experimental, irreverente e reflexivo, pelo trânsito por diversas mídias e linguagens artísticas, pelo cruzamento de diferentes domínios, saberes e sensibilidades.</p>
+      <p>A exposição conta com trinta obras que evidenciam as diversas linguagens com as quais o artista trabalha — poesia visual, vídeos e fotografias, esculturas e instalações, performances e intervenções urbanas — e com uma instalação inédita, “Jonas”.</p>
+      <p class="muted">Centro Cultural Banco do Brasil, texto institucional do catálogo (2015).</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Experiência Tumulto III</h2>
+      <p class="lede-large">“Vemos por enigmas, ouvimos por dissonâncias. É esse lugar fora do lugar, que Barja não cessa de abrir. Por isso, suspeito que essa escrita-arte ao lado é, antes de tudo, ‘artesemnome’.”</p>
+      <p>Marisa Flórido César, curadora — texto de abertura do catálogo. Barja é um subversor da codificação da vida e da arte: apropria-se de ícones e mitos, textos e objetos, conceitos e saberes, e os associa de modo improvável, por vezes risível, desvelando as arbitrariedades dos signos e dos discursos. João Batista encontra-se com outro João, o Beuys; o sol/olho de Goethe transforma-se na quinta nota da escala; o olho converte-se no olho-ânus de Bataille.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
       <h2>Índice de obras</h2>
-      <p class="muted">
-        Em preparação — aguardando os arquivos do livro para montar o menu completo de obras,
-        com todas as imagens e textos diagramados. Nenhuma obra ficará de fora.
-      </p>
-      <div class="grid-cards" id="obra-grid">
-        <!-- As obras serão inseridas aqui a partir dos PDFs -->
-      </div>
+      <p class="muted">Todos os registros do catálogo — da Antologia da obra (1985–2015) às vídeo intervenções e à instalação Jonas. Nenhuma obra ficou de fora.</p>
+      <div class="grid-cards"><a class="card" href="#profeta"><span class="card-num">1985–86</span><h3 class="card-title">O Profeta e a Jaguatirica</h3><p>Instalação sonora com profeta de Aleijadinho, som, penas de galinha-d&#x27;Angola e sombra de jaguatirica.</p></a><a class="card" href="#cru"><span class="card-num">2011</span><h3 class="card-title">O Cru e o Cozido</h3><p>Animação de imagens da Expedição de Claude Lévi-Strauss ao Brasil em 1936.</p></a><a class="card" href="#neoconcreto"><span class="card-num">1985</span><h3 class="card-title">Neoconcreto</h3><p>Ver imagens e textos da obra no catálogo.</p></a><a class="card" href="#pega"><span class="card-num">1986</span><h3 class="card-title">Pega Monet, Pega Manet</h3><p>Ver imagens e textos da obra no catálogo.</p></a><a class="card" href="#deitado"><span class="card-num">1985</span><h3 class="card-title">Deitado Eternamente</h3><p>Ver imagens e textos da obra no catálogo.</p></a><a class="card" href="#casamento"><span class="card-num">1985</span><h3 class="card-title">O Casamento de Márcia X com Marcel Duchamp</h3><p>Ver imagens e textos da obra no catálogo.</p></a><a class="card" href="#queops"><span class="card-num">1990</span><h3 class="card-title">Queops Brasilis</h3><p>Ver imagens e textos da obra no catálogo.</p></a><a class="card" href="#beuys"><span class="card-num">1993</span><h3 class="card-title">São João Beuys</h3><p>Ver imagens e textos da obra no catálogo.</p></a><a class="card" href="#agulha"><span class="card-num">1999</span><h3 class="card-title">Agulha no Palheiro</h3><p>Ver imagens e textos da obra no catálogo.</p></a><a class="card" href="#sol"><span class="card-num">1997</span><h3 class="card-title">O Sol de Goethe</h3><p>Ver imagens e textos da obra no catálogo.</p></a><a class="card" href="#tvanal"><span class="card-num">1999</span><h3 class="card-title">TV Anal</h3><p>Ver imagens e textos da obra no catálogo.</p></a><a class="card" href="#cultura"><span class="card-num">1997</span><h3 class="card-title">Cultura x Natureza = Barbárie</h3><p>Ver imagens e textos da obra no catálogo.</p></a><a class="card" href="#h2o"><span class="card-num">1990</span><h3 class="card-title">H2O Monet</h3><p>Ver imagens e textos da obra no catálogo.</p></a><a class="card" href="#poema"><span class="card-num"></span><h3 class="card-title">Poema a Vista</h3><p>Ver imagens e textos da obra no catálogo.</p></a><a class="card" href="#gullar"><span class="card-num">1993</span><h3 class="card-title">Ser ou Não Ser ao Gullar</h3><p>Ver imagens e textos da obra no catálogo.</p></a><a class="card" href="#armadilhas"><span class="card-num">1984–2013</span><h3 class="card-title">Armadilhas Semânticas</h3><p>Ver imagens e textos da obra no catálogo.</p></a><a class="card" href="#gallo"><span class="card-num">Vídeo · 5′</span><h3 class="card-title">A Vitória do Gallo</h3><p>Vídeo-registro realizado em Cachoeira do Arari, Ilha de Marajó.</p></a><a class="card" href="#despacho"><span class="card-num">Vídeo · 3′</span><h3 class="card-title">Despacho na Duna</h3><p>Vídeo-registro da intervenção urbana, crítica ao circuito de arte.</p></a></div>
+    </div>
+  </section>
+
+  <section class="section section--work" id="profeta">
+    <div class="container">
+      <h2>O Profeta e a Jaguatirica</h2>
+      <p class="muted">1985–86 — do catálogo Experiência Tumulto III (CCBB, 2015)</p>
+      <div class="book-text"><p>THE PROPHET AND THE OCELOT - In “The Proph-
+et and the Ocelot” (1985-86), the Baroque is con-
+templated as a contemporary style peculiar to
+the modernity allied to Brazilian nature, creating
+a space from which one can question the value
+of the sign - visual and linguistic - of the artist’s
+own name. It envelops with its sound the figure
+of the prophet Oseas - his name means salvation
+- executed by the sculptor Aleijadinho, whose
+shadow delineates the squashed shadow of an
+Ocelot. The whole thing covered by a kind of veil
+with wings of guinea fowl [a key animal in the
+rites and ceremonies of Candomblé]. A work that
+adopts - and not by chance - the format of an au-
+thentic altarpiece as a sounding board to inter-
+pret signs, the traces that guide a tradition. Barja
+remains attentive to the possibilities of this place
+where the past moves towards a new thought, a
+new form; not by sublimation, but by shedding
+light to a place and the word kept in it, where Eu-
+ropean culture, Brazilian nature and African sap
+fuse themselves.</p><p>Mercedes Replinger  González - extract from Instalações
+Barja  - 2005 / Baroque Stages.
+
+Jaguatirica” (1985-86), o Barroco é contemplado
+como um estilo contemporâneo peculiar da mo-
+dernidade em aliança com a natureza brasileira,
+forjando o lugar de onde se pode interrogar o
+valor do signo, visual e lingüístico do nome pró-
+prio do artista. Envolve com seus sons a figura
+do profeta Oséias que quer dizer salvação reali-
+zada pelo escultor Aleijadinho cuja sombra de-
+limita o contorno, a sombra estatelada de uma
+Jaguatirica. Todo o conjunto coberto por penas
+de galinha d’Angola [animal chave nos ritos e
+cerimônias da prática do Candomblé] como
+um manto. Uma peça que, não por casualida-
+de,   adota o formato de um   autêntico retábulo
+como caixa de ressonância para interpretar os
+sinais, os indícios que orientam uma tradição.
+Barja permanece fiel à escuta desse lugar, des-
+se espaço onde o passado se converte em um
+novo pensamento, uma nova forma; não por
+sublimação, senão por iluminação de um lugar
+e da palavra que se guarda nele, onde se funde
+a cultura de origem européia, a natureza brasi-
+leira e a seiva africana.
+Mercedes Replinger  González - extraído do livro Insta-
+lações Barja - 2005, texto “Cenografias Barrocas”.</p></div>
+      <div class="gallery"><figure><a href="assets/img/tumulto-iii/full/p011_x31.jpeg" data-lightbox="assets/img/tumulto-iii/full/p011_x31.jpeg" data-alt="Obra de Wagner Barja — página 11"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p011_x31.jpg" alt="Obra de Wagner Barja — página 11" /></a><figcaption>Página 11 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p012_x35.jpeg" data-lightbox="assets/img/tumulto-iii/full/p012_x35.jpeg" data-alt="Obra de Wagner Barja — página 12"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p012_x35.jpg" alt="Obra de Wagner Barja — página 12" /></a><figcaption>Página 12 do catálogo</figcaption></figure></div>
+    </div>
+  </section><section class="section section--work" id="cru">
+    <div class="container">
+      <h2>O Cru e o Cozido</h2>
+      <p class="muted">2011 — do catálogo Experiência Tumulto III (CCBB, 2015)</p>
+      <div class="book-text"><p>2011
+Detalhes da animação de
+imagens da Expedição de Claude
+Levì Strauss ao Brasil em 1936.</p></div>
+      <div class="gallery"><figure><a href="assets/img/tumulto-iii/full/p013_x39.jpeg" data-lightbox="assets/img/tumulto-iii/full/p013_x39.jpeg" data-alt="Obra de Wagner Barja — página 13"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p013_x39.jpg" alt="Obra de Wagner Barja — página 13" /></a><figcaption>Página 13 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p015_x59.jpeg" data-lightbox="assets/img/tumulto-iii/full/p015_x59.jpeg" data-alt="Obra de Wagner Barja — página 15"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p015_x59.jpg" alt="Obra de Wagner Barja — página 15" /></a><figcaption>Página 15 do catálogo</figcaption></figure></div>
+    </div>
+  </section><section class="section section--work" id="neoconcreto">
+    <div class="container">
+      <h2>Neoconcreto</h2>
+      <p class="muted">1985 — do catálogo Experiência Tumulto III (CCBB, 2015)</p>
+      
+      <div class="gallery"><figure><a href="assets/img/tumulto-iii/full/p016_x63.jpeg" data-lightbox="assets/img/tumulto-iii/full/p016_x63.jpeg" data-alt="Obra de Wagner Barja — página 16"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p016_x63.jpg" alt="Obra de Wagner Barja — página 16" /></a><figcaption>Página 16 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p017_x69.jpeg" data-lightbox="assets/img/tumulto-iii/full/p017_x69.jpeg" data-alt="Obra de Wagner Barja — página 17"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p017_x69.jpg" alt="Obra de Wagner Barja — página 17" /></a><figcaption>Página 17 do catálogo</figcaption></figure></div>
+    </div>
+  </section><section class="section section--work" id="pega">
+    <div class="container">
+      <h2>Pega Monet, Pega Manet</h2>
+      <p class="muted">1986 — do catálogo Experiência Tumulto III (CCBB, 2015)</p>
+      <div class="book-text"><p>PEGA MONET PEGA MANET
+1986</p></div>
+      <div class="gallery"><figure><a href="assets/img/tumulto-iii/full/p018_x73.jpeg" data-lightbox="assets/img/tumulto-iii/full/p018_x73.jpeg" data-alt="Obra de Wagner Barja — página 18"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p018_x73.jpg" alt="Obra de Wagner Barja — página 18" /></a><figcaption>Página 18 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p019_x77.jpeg" data-lightbox="assets/img/tumulto-iii/full/p019_x77.jpeg" data-alt="Obra de Wagner Barja — página 19"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p019_x77.jpg" alt="Obra de Wagner Barja — página 19" /></a><figcaption>Página 19 do catálogo</figcaption></figure></div>
+    </div>
+  </section><section class="section section--work" id="deitado">
+    <div class="container">
+      <h2>Deitado Eternamente</h2>
+      <p class="muted">1985 — do catálogo Experiência Tumulto III (CCBB, 2015)</p>
+      
+      <div class="gallery"><figure><a href="assets/img/tumulto-iii/full/p020_x81.jpeg" data-lightbox="assets/img/tumulto-iii/full/p020_x81.jpeg" data-alt="Obra de Wagner Barja — página 20"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p020_x81.jpg" alt="Obra de Wagner Barja — página 20" /></a><figcaption>Página 20 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p022_x89.jpeg" data-lightbox="assets/img/tumulto-iii/full/p022_x89.jpeg" data-alt="Obra de Wagner Barja — página 22"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p022_x89.jpg" alt="Obra de Wagner Barja — página 22" /></a><figcaption>Página 22 do catálogo</figcaption></figure></div>
+    </div>
+  </section><section class="section section--work" id="casamento">
+    <div class="container">
+      <h2>O Casamento de Márcia X com Marcel Duchamp</h2>
+      <p class="muted">1985 — do catálogo Experiência Tumulto III (CCBB, 2015)</p>
+      <div class="book-text"><p>O CASAMENTO DE MARCIA X COM MAR-
+CEL DUCHAMP
+1985</p><p>O CASAMENTO DE MARCIA
+X COM MARCEL DUCHAMP
+O ângulo adequado para se
+poetizar o mundo: reduzindo
+“um problema intrincado a
+pontos simples e claros...”. Di-
+versão e complexidade, como
+deve ser a vida.
+Marília Panitz - extraído do livro Ins-
+talações Barja - 2005, texto “ao que
+importa uma resposta” .
+THE MARRIAGE OF MARCIA
+X WITH  MARCEL DUCHAMP
+The proper angle for poeticizing the
+world: reducing “a complex prob-
+lem to simple, clear points…”.
+Complexity and fun, just as life
+should be.
+Marília Panitz - extract from Insta-
+lações Barja - 2005 / “The relevance
+of an answer”.</p></div>
+      <div class="gallery"><figure><a href="assets/img/tumulto-iii/full/p023_x93.jpeg" data-lightbox="assets/img/tumulto-iii/full/p023_x93.jpeg" data-alt="Obra de Wagner Barja — página 23"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p023_x93.jpg" alt="Obra de Wagner Barja — página 23" /></a><figcaption>Página 23 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p025_x105.jpeg" data-lightbox="assets/img/tumulto-iii/full/p025_x105.jpeg" data-alt="Obra de Wagner Barja — página 25"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p025_x105.jpg" alt="Obra de Wagner Barja — página 25" /></a><figcaption>Página 25 do catálogo</figcaption></figure></div>
+    </div>
+  </section><section class="section section--work" id="queops">
+    <div class="container">
+      <h2>Queops Brasilis</h2>
+      <p class="muted">1990 — do catálogo Experiência Tumulto III (CCBB, 2015)</p>
+      
+      <div class="gallery"><figure><a href="assets/img/tumulto-iii/full/p026_x109.jpeg" data-lightbox="assets/img/tumulto-iii/full/p026_x109.jpeg" data-alt="Obra de Wagner Barja — página 26"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p026_x109.jpg" alt="Obra de Wagner Barja — página 26" /></a><figcaption>Página 26 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p029_x121.jpeg" data-lightbox="assets/img/tumulto-iii/full/p029_x121.jpeg" data-alt="Obra de Wagner Barja — página 29"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p029_x121.jpg" alt="Obra de Wagner Barja — página 29" /></a><figcaption>Página 29 do catálogo</figcaption></figure></div>
+    </div>
+  </section><section class="section section--work" id="beuys">
+    <div class="container">
+      <h2>São João Beuys</h2>
+      <p class="muted">1993 — do catálogo Experiência Tumulto III (CCBB, 2015)</p>
+      
+      <div class="gallery"><figure><a href="assets/img/tumulto-iii/full/p030_x125.jpeg" data-lightbox="assets/img/tumulto-iii/full/p030_x125.jpeg" data-alt="Obra de Wagner Barja — página 30"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p030_x125.jpg" alt="Obra de Wagner Barja — página 30" /></a><figcaption>Página 30 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p032_x141.jpeg" data-lightbox="assets/img/tumulto-iii/full/p032_x141.jpeg" data-alt="Obra de Wagner Barja — página 32"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p032_x141.jpg" alt="Obra de Wagner Barja — página 32" /></a><figcaption>Página 32 do catálogo</figcaption></figure></div>
+    </div>
+  </section><section class="section section--work" id="agulha">
+    <div class="container">
+      <h2>Agulha no Palheiro</h2>
+      <p class="muted">1999 — do catálogo Experiência Tumulto III (CCBB, 2015)</p>
+      <div class="book-text"><p>para nivelar visibilidades
+1999
+
+nivelar visibilidades - Presença
+e ausência, distanciamento e
+proximidade. Por um instante
+que pode ser uma eternidade,
+visão e cegueira ficam iguala-
+dos ante a dificuldade de se
+encontrar algo olhando.
+Mercedes Replinger González - ex-
+traído do livro Instalações Barja  -
+2005.
+NEEDLE IN THE HAYSTACK:
+Equalizing visibilities - Pres-
+ence and absence, distance
+and proximity.  For an instant
+that may feel like eternity,
+blindness and sight attain
+equality before the difficulty
+of finding something with
+the sight.
+Mercedes Replinger González - ex-
+tract from Instalações Barja  - 2005.</p></div>
+      <div class="gallery"><figure><a href="assets/img/tumulto-iii/full/p033_x145.jpeg" data-lightbox="assets/img/tumulto-iii/full/p033_x145.jpeg" data-alt="Obra de Wagner Barja — página 33"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p033_x145.jpg" alt="Obra de Wagner Barja — página 33" /></a><figcaption>Página 33 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p034_x149.jpeg" data-lightbox="assets/img/tumulto-iii/full/p034_x149.jpeg" data-alt="Obra de Wagner Barja — página 34"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p034_x149.jpg" alt="Obra de Wagner Barja — página 34" /></a><figcaption>Página 34 do catálogo</figcaption></figure></div>
+    </div>
+  </section><section class="section section--work" id="sol">
+    <div class="container">
+      <h2>O Sol de Goethe</h2>
+      <p class="muted">1997 — do catálogo Experiência Tumulto III (CCBB, 2015)</p>
+      
+      <div class="gallery"><figure><a href="assets/img/tumulto-iii/full/p035_x153.jpeg" data-lightbox="assets/img/tumulto-iii/full/p035_x153.jpeg" data-alt="Obra de Wagner Barja — página 35"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p035_x153.jpg" alt="Obra de Wagner Barja — página 35" /></a><figcaption>Página 35 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p037_x161.jpeg" data-lightbox="assets/img/tumulto-iii/full/p037_x161.jpeg" data-alt="Obra de Wagner Barja — página 37"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p037_x161.jpg" alt="Obra de Wagner Barja — página 37" /></a><figcaption>Página 37 do catálogo</figcaption></figure></div>
+    </div>
+  </section><section class="section section--work" id="tvanal">
+    <div class="container">
+      <h2>TV Anal</h2>
+      <p class="muted">1999 — do catálogo Experiência Tumulto III (CCBB, 2015)</p>
+      <div class="book-text"><p>tência no ser humano de um olho específico
+para contemplar o sol: o olho pineal, glândula
+situada abaixo da caixa craniana que, diferen-
+temente dos olhos surpreendidos na horizon-
+talidade do devir cotidiano, do que se oferece
+ao olhar, permite-nos levantar e ver o sol cara
+a cara, como a águia dos antigos. O olho pine-
+al é, para Bataille, a confirmação do afã do ser
+humano de elevar-se acima de sua condição
+terrena. Esse incontido desejo de ver o sol cara
+a cara marcaria, segundo o autor, a evolução do
+homem de sua posição inclinada, quadrúpede,
+presa ao solo de vista horizontal, até a ereta
+ânsia de contemplar o sol diretamente e que
+o afastaria definitivamente de sua origem pri-
+meira como animal. Assim, ébrio de sol, pode
+entregar-se por completo à angustia e à náusea
+que o espaço sem limites, o vazio absoluto pro-
+duz . O olho pineal, órgão que permite ao ho-
+mem identificar-se diretamente com aquilo que
+contempla, converte o mesmo em sol, ou seja,
+tornar-se, paradoxalmente, um sol cego ou sol
+cegador.
+(...) Bataille, que encontrava correspondências paró-
+dicas entre todas as coisas do universo, via esse olho
+pineal em estreita relação com o ânus. “O Ânus So-
+lar” se chama precisamente um texto de 1927.
+Mercedez Replinger/Marisa Flórido César
+
+1997
+ANAL TV - Georges Bataille (...) imagined the
+existence in the human being of an eye just to
+contemplate the sun: the pineal eye, a gland
+situated under the skull that, unlike the dazed
+eyes of everyday horizontality, of what is of-
+fered to be seen, allows us to raise-up and see
+the sun face to face, like the eagle of the An-
+cient. The pineal eye is, for Bataille, the confir-
+mation of the human being’s eagerness of rais-
+ing themselves from their earthly condition.
+This unrestrained desire to see the sun face
+to face would define, according to the author,
+Men’s evolution from his inclined position,
+quadruped, tied to the horizontal ground view,
+until the erect craving of contemplating the
+sun directly would definitely push him away
+from his first origins as an animal. Thus, drunk-
+en with sun, he can give himself completely to
+anguish and nausea that the limitless space,
+that absolute emptiness produces. The pineal
+eye, an organ that allows Men to identify him-
+self directly to that which he contemplates,
+converts even the sun, that is, it becomes, para-
+doxically, a blind sun or a blinding sun.
+(...) Bataille, who found parody correspondences
+between all things in the universe, saw this pi-
+neal eye in a direct relation to the anus. “The So-
+lar Anus” was precisely the name of a 1927 text:
+“the eye, on top of the cranium, is represented as
+a terrible erupting volcano, comic and confused,
+associated to the rear end and its excretions”.
+Mercedez Replinger /Marisa Florido César
+“o olho, na parte superior do crânio, é representado como um horrível vulcão em erupção, em um caráter confuso e cômico, associado ao traseiro e suas excreções”.</p></div>
+      <div class="gallery"><figure><a href="assets/img/tumulto-iii/full/p038_x165.jpeg" data-lightbox="assets/img/tumulto-iii/full/p038_x165.jpeg" data-alt="Obra de Wagner Barja — página 38"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p038_x165.jpg" alt="Obra de Wagner Barja — página 38" /></a><figcaption>Página 38 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p039_x169.jpeg" data-lightbox="assets/img/tumulto-iii/full/p039_x169.jpeg" data-alt="Obra de Wagner Barja — página 39"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p039_x169.jpg" alt="Obra de Wagner Barja — página 39" /></a><figcaption>Página 39 do catálogo</figcaption></figure></div>
+    </div>
+  </section><section class="section section--work" id="cultura">
+    <div class="container">
+      <h2>Cultura x Natureza = Barbárie</h2>
+      <p class="muted">1997 — do catálogo Experiência Tumulto III (CCBB, 2015)</p>
+      
+      <div class="gallery"><figure><a href="assets/img/tumulto-iii/full/p043_x185.jpeg" data-lightbox="assets/img/tumulto-iii/full/p043_x185.jpeg" data-alt="Obra de Wagner Barja — página 43"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p043_x185.jpg" alt="Obra de Wagner Barja — página 43" /></a><figcaption>Página 43 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p045_x193.jpeg" data-lightbox="assets/img/tumulto-iii/full/p045_x193.jpeg" data-alt="Obra de Wagner Barja — página 45"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p045_x193.jpg" alt="Obra de Wagner Barja — página 45" /></a><figcaption>Página 45 do catálogo</figcaption></figure></div>
+    </div>
+  </section><section class="section section--work" id="h2o">
+    <div class="container">
+      <h2>H2O Monet</h2>
+      <p class="muted">1990 — do catálogo Experiência Tumulto III (CCBB, 2015)</p>
+      
+      <div class="gallery"><figure><a href="assets/img/tumulto-iii/full/p046_x197.jpeg" data-lightbox="assets/img/tumulto-iii/full/p046_x197.jpeg" data-alt="Obra de Wagner Barja — página 46"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p046_x197.jpg" alt="Obra de Wagner Barja — página 46" /></a><figcaption>Página 46 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p048_x205.jpeg" data-lightbox="assets/img/tumulto-iii/full/p048_x205.jpeg" data-alt="Obra de Wagner Barja — página 48"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p048_x205.jpg" alt="Obra de Wagner Barja — página 48" /></a><figcaption>Página 48 do catálogo</figcaption></figure></div>
+    </div>
+  </section><section class="section section--work" id="poema">
+    <div class="container">
+      <h2>Poema a Vista</h2>
+      <p class="muted"> — do catálogo Experiência Tumulto III (CCBB, 2015)</p>
+      
+      <div class="gallery"><figure><a href="assets/img/tumulto-iii/full/p049_x209.jpeg" data-lightbox="assets/img/tumulto-iii/full/p049_x209.jpeg" data-alt="Obra de Wagner Barja — página 49"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p049_x209.jpg" alt="Obra de Wagner Barja — página 49" /></a><figcaption>Página 49 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p051_x217.jpeg" data-lightbox="assets/img/tumulto-iii/full/p051_x217.jpeg" data-alt="Obra de Wagner Barja — página 51"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p051_x217.jpg" alt="Obra de Wagner Barja — página 51" /></a><figcaption>Página 51 do catálogo</figcaption></figure></div>
+    </div>
+  </section><section class="section section--work" id="gullar">
+    <div class="container">
+      <h2>Ser ou Não Ser ao Gullar</h2>
+      <p class="muted">1993 — do catálogo Experiência Tumulto III (CCBB, 2015)</p>
+      <div class="book-text"><p>1993
+DA2</p><p>Um Não que é parte de um
+jogo ambivalente com a pre-
+sença simultânea de uma
+afirmação e uma negação,
+sem que delas possa surgir
+uma superação. O possível se
+faz realidade, no sentido que
+o enunciava Bergson, onde o
+possível não é um fantasma
+que espera seu momento
+para assumir uma forma real,
+concreta. Ao contrário, o possí-
+vel é a realidade.
+Mercedez Replinger  ,do livro Ins-
+talações Barja  - 2005 do texto “A
+linguagem do olhar”.
+TO BE OR NOT TO BE TO GULLAR*
+A “no” that is part of an am-
+bivalent game in which af-
+firmation and negation exist
+side by side, with no possibility
+of a victory for either. Possi-
+ble becomes real, in the sense
+that Bergson meant when he
+said the possible is not a ghost
+waiting to incarnate and take
+a concrete form. On the con-
+trary, the possible already is
+reality.
+*Ferreira Gullar is a Brazilian poet
+and art critic [Translator’s note]</p><p>Mercedez Replinger  , extract from
+Instalações Barja  - 2005 / “The lan-
+guage of seeing”/MARISA FLORIDO .</p></div>
+      <div class="gallery"><figure><a href="assets/img/tumulto-iii/full/p052_x221.jpeg" data-lightbox="assets/img/tumulto-iii/full/p052_x221.jpeg" data-alt="Obra de Wagner Barja — página 52"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p052_x221.jpg" alt="Obra de Wagner Barja — página 52" /></a><figcaption>Página 52 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p053_x225.jpeg" data-lightbox="assets/img/tumulto-iii/full/p053_x225.jpeg" data-alt="Obra de Wagner Barja — página 53"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p053_x225.jpg" alt="Obra de Wagner Barja — página 53" /></a><figcaption>Página 53 do catálogo</figcaption></figure></div>
+    </div>
+  </section><section class="section section--work" id="armadilhas">
+    <div class="container">
+      <h2>Armadilhas Semânticas</h2>
+      <p class="muted">1984–2013 — do catálogo Experiência Tumulto III (CCBB, 2015)</p>
+      <div class="book-text"><p>1984-2013
+AKD  mico
+POLE  mico
+POLISSE  mico
+EPISTE mico
+END mico
+EPID mico
+PAND mico
+Cultura
+Natureza
+ENTRE A CADEIA ALIMENTAR, O CÓDIGO LINGUÍSTICO E O CÓDIGO FLORESTAL
+Com os pressupostos da efemeridade e da invisibilidade, essa ação conjunta de deglutição da língua portuguesa
+empreendida pelos micos (na qualidade de animais comedores de banana e de sufixos, do ponto de vista da morfo-
+logia linguística) provocada pela armadilha semântica construída por Barja, o que nos é dado a ver é o registro em
+tempo real e com documentação a posteriori, capturado por câmeras de segurança, da composição das palavras e
+seu posterior desaparecimento com a intervenção de seus sufixos/símios.
+Volto então aos fios/linhas/trilhas da Rua Araucária. Penso em escritura e em inscrições, tantas vezes imaginadas
+pelo habitante da cidade, quando confrontado com um céu recoberto de redes elétricas. Penso na separação e justa-
+posição entre natureza e cultura que a obra provoca. As duas primeiras equações poéticas (as mais antigas) trazem
+em si o signo do discurso, a relação direta com as letras articuladas em significados. Poderíamos falar inclusive de
+uma pendulação entre a tese (desenvolvida dentro da academia ) e a antítese ( gerada a partir da anterior e criando a
+polêmica). Sem dúvida, adjetivos que nomeiam características dentro do campo da linguagem verbal.  Mas, a terceira
+pode ser um desvio de rota: endêmico associa-se à contaminação. Às questões biológicas e biogeográficas. No jogo</p></div>
+      <div class="gallery"><figure><a href="assets/img/tumulto-iii/full/p054_x229.jpeg" data-lightbox="assets/img/tumulto-iii/full/p054_x229.jpeg" data-alt="Obra de Wagner Barja — página 54"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p054_x229.jpg" alt="Obra de Wagner Barja — página 54" /></a><figcaption>Página 54 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p060_x253.jpeg" data-lightbox="assets/img/tumulto-iii/full/p060_x253.jpeg" data-alt="Obra de Wagner Barja — página 60"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p060_x253.jpg" alt="Obra de Wagner Barja — página 60" /></a><figcaption>Página 60 do catálogo</figcaption></figure></div>
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container">
+      <h2>Vídeo intervenções</h2>
+      <p>Registros em vídeo das intervenções e performances de Wagner Barja: <em>A Vitória do Gallo</em> (Cachoeira do Arari, Ilha de Marajó — Funarte) e <em>Despacho na Duna</em>, crítica ao circuito de arte.</p>
+    </div>
+  </section>
+
+  <section class="section section--work" id="gallo">
+    <div class="container">
+      <h2>A Vitória do Gallo</h2>
+      <p class="muted">Vídeo · 5′ — do catálogo Experiência Tumulto III (CCBB, 2015)</p>
+      <div class="book-text"><p>Wagner Barja foi enviado pela Funarte (Fundação Nacional de Arte),
+para Nossa Senhora de Cachoeira de Arari, no Pará. A cidade abriga
+o Museu do Marajó, fundado em 1972 pelo padre italiano, Giovanni
+Gallo, importante líder local, junto com a população (em parte re-
+manescente de comunidades quilombolas). Em torno do museu do
+homem marajoara e de sua cosmologia cultural, a vida social seria
+estruturada. Após a morte do padre, a comunidade continuou a cres-
+cer imprensada entre o latifúndio e o rio, acirrando os conflitos entre
+o poder local (latifundiários) e as lideranças comunitárias.
+A proposta do artista consistiu então na realização por todos de
+um grande ato performático, uma celebração ocupando parte
+daquelas terras improdutivas com o universo cultural do homem
+marajoara: o boi-bumbá, a bandeira do Divino, entre outros. No dia
+do evento, Barja observou algo inusitado: cerca de 300 pessoas pe-
+las ruas, ocupadas com os seus afazeres do dia a dia, seguravam
+um papel enrolado na mão, uma folha em branco. Homens, mu-
+lheres, crianças, prostitutas marajoaras simulavam assim a posse
+de seu terreno. Ou seja, eles ficcionalizaram a reversão da própria
+situação precária, imaginaram e encenaram a mudança em suas
+vidas. Com a festa do boi, a festa da ocupação, fundaram o Bairro
+do Gallo. A prefeitura assumiu uma posição solidária, e eles lá ain-
+da permanecem.
+O artista foi ali um catalisador das potências adormecidas que
+precisavam apenas de um gatilho para emergir. Ficção não é a
+criação de um mundo ilusório se contrapondo ao real: são formas
+inauditas e ousadas de conexão entre um mundo referencial e
+outros mundos (inclusive potenciais) que atravessam ou orbitam
+à sua volta. Essa é sua potência cosmogônica, sua potência de
+imaginação, liberdade e criação. Arte não é o que toma para si a
+tarefa de ficcionalizar para o outro, é o que abre ao outro as con-
+dições e possibilidades para ele operar a própria ficção criadora.
+Ficção, phantasia para os gregos, designava “as artes do forjar”. São
+gestos de imaginar e forjar, gestos de uma reinvenção radical dos
+mundos. Marisa Flórido César, 2014
+FICÇÕES CRIADORAS
+Marisa Flórido César</p></div>
+      <div class="gallery"><figure><a href="assets/img/tumulto-iii/full/p067_x289.jpeg" data-lightbox="assets/img/tumulto-iii/full/p067_x289.jpeg" data-alt="Obra de Wagner Barja — página 67"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p067_x289.jpg" alt="Obra de Wagner Barja — página 67" /></a><figcaption>Página 67 do catálogo</figcaption></figure></div>
+    </div>
+  </section><section class="section section--work" id="despacho">
+    <div class="container">
+      <h2>Despacho na Duna</h2>
+      <p class="muted">Vídeo · 3′ — do catálogo Experiência Tumulto III (CCBB, 2015)</p>
+      
+      <div class="gallery"><figure><a href="assets/img/tumulto-iii/full/p068_x293.jpeg" data-lightbox="assets/img/tumulto-iii/full/p068_x293.jpeg" data-alt="Obra de Wagner Barja — página 68"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p068_x293.jpg" alt="Obra de Wagner Barja — página 68" /></a><figcaption>Página 68 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p075_x343.jpeg" data-lightbox="assets/img/tumulto-iii/full/p075_x343.jpeg" data-alt="Obra de Wagner Barja — página 75"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p075_x343.jpg" alt="Obra de Wagner Barja — página 75" /></a><figcaption>Página 75 do catálogo</figcaption></figure></div>
+    </div>
+  </section>
+
+  <section class="section section--soft" id="jonas">
+    <div class="container">
+      <h2>Jonas — instalação inédita</h2>
+      <p class="lede-large">Jonas, o profeta desobediente, é engolido por uma baleia em alto mar e lá fica por três dias, em câmara escura. Barja, o artista tumultuador, devolve o visitante a esse ventre: águas projetadas, mônadas abertas, palavra e imagem em suspensão.</p>
+      <p>As páginas seguintes do catálogo documentam a instalação multimídia inédita criada para <em>Experiência Tumulto III</em>, com texto de Maria Thereza Azevedo (“Jonas: deslocamentos e repetições em instalação multimídia”) e de Antônio Miranda (“Verbivocovisualidade na instalação Jonas”).</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Jonas em imagens</h2>
+      <div class="gallery"><figure><a href="assets/img/tumulto-iii/full/p076_x348.jpeg" data-lightbox="assets/img/tumulto-iii/full/p076_x348.jpeg" data-alt="Obra de Wagner Barja — página 76"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p076_x348.jpg" alt="Obra de Wagner Barja — página 76" /></a><figcaption>Página 76 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p077_x354.jpeg" data-lightbox="assets/img/tumulto-iii/full/p077_x354.jpeg" data-alt="Obra de Wagner Barja — página 77"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p077_x354.jpg" alt="Obra de Wagner Barja — página 77" /></a><figcaption>Página 77 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p079_x361.jpeg" data-lightbox="assets/img/tumulto-iii/full/p079_x361.jpeg" data-alt="Obra de Wagner Barja — página 79"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p079_x361.jpg" alt="Obra de Wagner Barja — página 79" /></a><figcaption>Página 79 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p080_x365.jpeg" data-lightbox="assets/img/tumulto-iii/full/p080_x365.jpeg" data-alt="Obra de Wagner Barja — página 80"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p080_x365.jpg" alt="Obra de Wagner Barja — página 80" /></a><figcaption>Página 80 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p081_x369.jpeg" data-lightbox="assets/img/tumulto-iii/full/p081_x369.jpeg" data-alt="Obra de Wagner Barja — página 81"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p081_x369.jpg" alt="Obra de Wagner Barja — página 81" /></a><figcaption>Página 81 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p082_x373.jpeg" data-lightbox="assets/img/tumulto-iii/full/p082_x373.jpeg" data-alt="Obra de Wagner Barja — página 82"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p082_x373.jpg" alt="Obra de Wagner Barja — página 82" /></a><figcaption>Página 82 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p083_x377.jpeg" data-lightbox="assets/img/tumulto-iii/full/p083_x377.jpeg" data-alt="Obra de Wagner Barja — página 83"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p083_x377.jpg" alt="Obra de Wagner Barja — página 83" /></a><figcaption>Página 83 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p084_x381.jpeg" data-lightbox="assets/img/tumulto-iii/full/p084_x381.jpeg" data-alt="Obra de Wagner Barja — página 84"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p084_x381.jpg" alt="Obra de Wagner Barja — página 84" /></a><figcaption>Página 84 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p085_x385.jpeg" data-lightbox="assets/img/tumulto-iii/full/p085_x385.jpeg" data-alt="Obra de Wagner Barja — página 85"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p085_x385.jpg" alt="Obra de Wagner Barja — página 85" /></a><figcaption>Página 85 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p086_x389.jpeg" data-lightbox="assets/img/tumulto-iii/full/p086_x389.jpeg" data-alt="Obra de Wagner Barja — página 86"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p086_x389.jpg" alt="Obra de Wagner Barja — página 86" /></a><figcaption>Página 86 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p087_x393.jpeg" data-lightbox="assets/img/tumulto-iii/full/p087_x393.jpeg" data-alt="Obra de Wagner Barja — página 87"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p087_x393.jpg" alt="Obra de Wagner Barja — página 87" /></a><figcaption>Página 87 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p088_x397.jpeg" data-lightbox="assets/img/tumulto-iii/full/p088_x397.jpeg" data-alt="Obra de Wagner Barja — página 88"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p088_x397.jpg" alt="Obra de Wagner Barja — página 88" /></a><figcaption>Página 88 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p089_x401.jpeg" data-lightbox="assets/img/tumulto-iii/full/p089_x401.jpeg" data-alt="Obra de Wagner Barja — página 89"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p089_x401.jpg" alt="Obra de Wagner Barja — página 89" /></a><figcaption>Página 89 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p090_x405.jpeg" data-lightbox="assets/img/tumulto-iii/full/p090_x405.jpeg" data-alt="Obra de Wagner Barja — página 90"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p090_x405.jpg" alt="Obra de Wagner Barja — página 90" /></a><figcaption>Página 90 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p091_x409.jpeg" data-lightbox="assets/img/tumulto-iii/full/p091_x409.jpeg" data-alt="Obra de Wagner Barja — página 91"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p091_x409.jpg" alt="Obra de Wagner Barja — página 91" /></a><figcaption>Página 91 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p092_x415.jpeg" data-lightbox="assets/img/tumulto-iii/full/p092_x415.jpeg" data-alt="Obra de Wagner Barja — página 92"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p092_x415.jpg" alt="Obra de Wagner Barja — página 92" /></a><figcaption>Página 92 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p093_x419.jpeg" data-lightbox="assets/img/tumulto-iii/full/p093_x419.jpeg" data-alt="Obra de Wagner Barja — página 93"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p093_x419.jpg" alt="Obra de Wagner Barja — página 93" /></a><figcaption>Página 93 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p096_x427.jpeg" data-lightbox="assets/img/tumulto-iii/full/p096_x427.jpeg" data-alt="Obra de Wagner Barja — página 96"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p096_x427.jpg" alt="Obra de Wagner Barja — página 96" /></a><figcaption>Página 96 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p097_x431.jpeg" data-lightbox="assets/img/tumulto-iii/full/p097_x431.jpeg" data-alt="Obra de Wagner Barja — página 97"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p097_x431.jpg" alt="Obra de Wagner Barja — página 97" /></a><figcaption>Página 97 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p098_x435.jpeg" data-lightbox="assets/img/tumulto-iii/full/p098_x435.jpeg" data-alt="Obra de Wagner Barja — página 98"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p098_x435.jpg" alt="Obra de Wagner Barja — página 98" /></a><figcaption>Página 98 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p099_x439.jpeg" data-lightbox="assets/img/tumulto-iii/full/p099_x439.jpeg" data-alt="Obra de Wagner Barja — página 99"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p099_x439.jpg" alt="Obra de Wagner Barja — página 99" /></a><figcaption>Página 99 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p100_x443.jpeg" data-lightbox="assets/img/tumulto-iii/full/p100_x443.jpeg" data-alt="Obra de Wagner Barja — página 100"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p100_x443.jpg" alt="Obra de Wagner Barja — página 100" /></a><figcaption>Página 100 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p101_x447.jpeg" data-lightbox="assets/img/tumulto-iii/full/p101_x447.jpeg" data-alt="Obra de Wagner Barja — página 101"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p101_x447.jpg" alt="Obra de Wagner Barja — página 101" /></a><figcaption>Página 101 do catálogo</figcaption></figure>
+<figure><a href="assets/img/tumulto-iii/full/p102_x451.jpeg" data-lightbox="assets/img/tumulto-iii/full/p102_x451.jpeg" data-alt="Obra de Wagner Barja — página 102"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p102_x451.jpg" alt="Obra de Wagner Barja — página 102" /></a><figcaption>Página 102 do catálogo</figcaption></figure></div>
     </div>
   </section>
 </main>
+<section class="section section--soft">
+    <div class="container">
+      <h2 id="imprensa">Imprensa sobre a exposição</h2>
+      <p class="muted">Matérias sobre <em>Experiência Tumulto III</em> e as mostras de Wagner Barja.</p>
+      <ul class="pub-list"><li><a rel="noreferrer" target="_blank" href="https://g1.globo.com/distrito-federal/noticia/2015/02/exposicao-no-df-reune-obras-de-30-anos-de-carreira-de-wagner-barja.html">Exposição no DF reúne obras de 30 anos de carreira de Wagner Barja</a><span class="pub-meta">G1 — Distrito Federal</span><span class="pub-year">2015</span></li><li><a rel="noreferrer" target="_blank" href="https://ccbb.com.br/programacao-digital/catalogos/">Experiência Tumulto III — Antologia da Obra de Wagner Barja (catálogo digital CCBB)</a><span class="pub-meta">Centro Cultural Banco do Brasil</span><span class="pub-year">2015</span></li><li><a rel="noreferrer" target="_blank" href="https://arteref.com/exposicoes-e-eventos/galeria-andrea-rehder-comemora-15-anos-com-exposicao-inedita-de-cesar-oiticica-filho/">Andrea Rehder comemora 15 anos com exposição inédita de César Oiticica Filho (sobre Tumulto IV / Jonas II, 2018)</a><span class="pub-meta">ArteRef</span><span class="pub-year">2024</span></li><li><a rel="noreferrer" target="_blank" href="https://www.sp-arte.com/exposicoes/cartografias-afetivas">Cartografias afetivas / agenda — Experiência Tumulto IV – Jonas II (2018 e 2026, Andrea Rehder)</a><span class="pub-meta">SP-Arte</span><span class="pub-year">2018</span></li><li><a rel="noreferrer" target="_blank" href="https://www2.senado.leg.br/jspui/bitstream/id/775495/1/DF_Museu_P002_R0071.pdf">Museu da República — curador acumula desafios, &#x27;xerife sem estrela&#x27;</a><span class="pub-meta">Correio Braziliense, Caderno C (via Senado — PDF)</span><span class="pub-year">2007</span></li><li><a rel="noreferrer" target="_blank" href="https://www.correiobraziliense.com.br/diversao-e-arte/2020/08/4869999-censura-velada-ou-escancarada.html">Censura velada ou escancarada? (depoimento de Wagner Barja sobre gestão e arte)</a><span class="pub-meta">Correio Braziliense</span><span class="pub-year">2020</span></li><li><a rel="noreferrer" target="_blank" href="https://www.canalcontemporaneo.art.br/blog/archives/2019_11.html">Wagner Barja no projeto Fuga / notas biográficas</a><span class="pub-meta">Canal Contemporâneo — Blog</span><span class="pub-year">2019</span></li><li><a rel="noreferrer" target="_blank" href="https://museus.pa.gov.br/midias/anexos/261_conversas_resistencia_e_convergencia.pdf">Conversas: resistência e convergência (bio e exposições de Wagner Barja)</a><span class="pub-meta">Museus do Pará — PDF</span><span class="pub-year">2019</span></li></ul>
+    </div>
+  </section>
 
 <div id="include-footer"></div>
 <div class="lightbox" data-open="false" aria-hidden="true">
