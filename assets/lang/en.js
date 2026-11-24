@@ -18,7 +18,7 @@ window.BARJA_EN = {
  "home.kicker": "Art · Curating · Education · Museums",
  "home.title": "Wagner Barja",
  "home.subtitle": "More than fifty years of production — from drawing and sculpture to computational art and museum management.",
- "home.lede": "Visual artist, curator, educator and cultural agitator. Master of Arts from the University of Brasília (UnB), with a sandwich period at the Universidad Complutense de Madrid, and holder of notable knowledge in Art History, Visual Arts and Art Education recognized by the Higher Education Council of the Brazilian Ministry of Education (MEC). He directed Espaço Cultural 508 Sul, coordinated Casa da Cultura da América Latina and directed the Museu Nacional da República — and continues to exhibit and publish.",
+ "home.lede": "Visual artist, curator, educator and cultural agitator. Master of Arts and Technology of the Image from the University of Brasília (UnB), with a sandwich period at the Universidad Complutense de Madrid, currently a doctoral candidate in Information Science at UnB, and holder of notable knowledge in Art History, Visual Arts and Art Education recognized by the Higher Education Council of the Brazilian Ministry of Education (MEC). He directed Espaço Cultural 508 Sul / Renato Russo, coordinated Casa da Cultura da América Latina and directed the Museu Nacional da República — and continues to exhibit and publish.",
  "home.areas.title": "Main areas of the site",
  "home.areas.sub": "Browse the work, the books and the trajectory of this multifaceted artist.",
  "card.tumulto.kicker": "Experience",
@@ -48,7 +48,7 @@ window.BARJA_EN = {
  "home.sobre.title": "About",
  "home.sobre.p1": "Born in Rio de Janeiro, Wagner Pacheco Barja built a rare trajectory: an artist with works in collections such as the Museu de Arte do Rio (MAR), the Museu Nacional de Belas Artes, the Museu de Arte de Brasília, the Museu Nacional de Brasília and the ONCE Museum in Madrid — and, at the same time, one of the protagonists in building the art system of Brasília. He directed Espaço Cultural Renato Russo, Casa da Cultura da América Latina and was curator of the Museu Nacional, institutions he helped to found or publicly reorganize.",
  "home.sobre.p2": "His production crosses drawing, painting, the object, metal sculpture — such as the celebrated whalebone sculptures — and telematic systems, as in the Arapucas Semânticas series, developed since the 1980s and closed in 2004 with the work Pandêmico. Critical texts, catalogues and curatorships complete a body of work that insists on the inseparability of culture and nature, matter and network.",
- "home.sobre.p3": "In the Lattes CV: Master of Arts from the University of Brasília (1999–2002), with a sandwich period at the Universidad Complutense de Madrid, and notable knowledge recognized by the Higher Education Council of MEC. He coordinated the GDF Museum System, directed the Museu Nacional Honestino Guimarães (2011–2018) and its technical coordination and curatorship since 2007. Representative member of UnB on the National Council for Cultural Policies (MinC) and on the Intergovernmental Commission of the Cultural Complex of the Republic.",
+ "home.sobre.p3": "In the Lattes CV: Master of Arts and Technology of the Image from the University of Brasília (1998–2002), with a sandwich period at the Universidad Complutense de Madrid, currently a doctoral candidate in Information Science at UnB, and notable knowledge recognized by the Higher Education Council of MEC. He coordinated the GDF Museum System, directed the Museu Nacional Honestino Guimarães (2011–2018) and its technical coordination and curatorship since 2007. Representative member of UnB on the National Council for Cultural Policies (MinC) and on the Intergovernmental Commission of the Cultural Complex of the Republic.",
  "obras.head.kicker": "Production",
  "obras.head.title": "Works",
  "obras.head.lede": "Wagner Barja's production in installations, objects, video and interventions, in chronological order — with links to the book pages where each work appears with images.",
@@ -113,5 +113,7 @@ window.BARJA_EN = {
  "tum.trechos.label": "Texts about this work",
  "ant.trechos.label": "Texts about this installation",
  "ant.source": "From the anthology <em>Instalações Barja</em>",
- "imprensa.title": "Press and clippings"
+ "imprensa.title": "Press and clippings",
+ "proj.consult.title": "Consultancies, curatorships and collection organization",
+ "proj.consult.muted": "Museums and collections Wagner Barja has collaborated with as consultant or curator."
 };
