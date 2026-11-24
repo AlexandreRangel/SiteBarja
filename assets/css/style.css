@@ -127,6 +127,33 @@ main { min-height: 70vh; }
   cursor: pointer;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  order: 3;
+}
+
+.lang-toggle {
+  background: none;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  min-width: 2.6rem;
+  padding: 0.42rem 0.6rem;
+  border-radius: 0.35rem;
+  cursor: pointer;
+  transition: border-color 0.2s var(--ease), color 0.2s var(--ease);
+}
+.lang-toggle:hover,
+.lang-toggle:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 .nav-menu {
   display: flex;
   align-items: center;
@@ -155,6 +182,7 @@ main { min-height: 70vh; }
 
 @media (max-width: 760px) {
   .nav-toggle { display: block; }
+  .nav-right { order: 2; }
   .nav-menu {
     display: none;
     position: absolute;

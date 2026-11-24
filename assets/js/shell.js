@@ -14,14 +14,17 @@
 
   function link(href, label, key) {
     var active = page === key ? ' aria-current="page"' : "";
-    return '<li><a href="' + href + '"' + active + '>' + label + "</a></li>";
+    return '<li><a href="' + href + '"' + active + ' data-i18n="nav.' + key + '">' + label + "</a></li>";
   }
 
   var headerHTML =
     '<header class="site-header">' +
     '  <div class="nav">' +
-    '    <a class="brand" href="index.html">Wagner Barja<small>artista · curador · educador</small></a>' +
-    '    <button class="nav-toggle" aria-label="Abrir menu">Menu</button>' +
+    '    <a class="brand" href="index.html">Wagner Barja<small data-i18n="nav.brand.sub">artista · curador · educador</small></a>' +
+    '    <div class="nav-right">' +
+    '      <button id="lang-toggle" class="lang-toggle" aria-label="Switch language to English">EN</button>' +
+    '      <button class="nav-toggle" aria-label="Abrir menu" data-i18n="menu.open">Menu</button>' +
+    "    </div>" +
     '    <nav aria-label="Principal">' +
     '      <ul class="nav-menu" id="nav-menu" data-open="false">' +
     link("index.html", "Início", "home") +
@@ -41,8 +44,8 @@
   var footerHTML =
     '<footer class="site-footer">' +
     '  <div class="container">' +
-    '    <span>Site de Wagner Barja</span>' +
-    '    <span><a rel="noreferrer" target="_blank" href="http://lattes.cnpq.br/3271219304383451">Currículo Lattes</a></span>' +
+    '    <span data-i18n="footer.site">Site de Wagner Barja</span>' +
+    '    <span><a rel="noreferrer" target="_blank" href="http://lattes.cnpq.br/3271219304383451" data-i18n="footer.lattes">Currículo Lattes</a></span>' +
     "  </div>" +
     "</footer>";
 
