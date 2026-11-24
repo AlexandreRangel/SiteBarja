@@ -135,7 +135,7 @@ window.BARJA_EN = {
  "loop.tumulto": "Tumulto III",
  "loop.profeta": "O Profeta",
  "obras.video.title": "The work in motion",
- "obras.video.count": "8 videos",
+ "obras.video.count": "9 videos",
  "obras.video.sub": "Interventions, performances and videos by Wagner Barja — light versions, played directly on the site.",
  "tum.film.title": "Film of the exhibition",
  "tum.film.note": "Video record of the Experiência Tumulto III exhibition, at CCBB Brasília (2015).",
@@ -146,5 +146,13 @@ window.BARJA_EN = {
  "jonas.clip3": "Jonas · record 3",
  "jonas.water.note": "The water texture projected in the Jonas installation — the same image that runs across this page's background.",
  "jonas.aula": "Lecture on the installation",
- "jonas.trechos": "Texts about the installation"
+ "jonas.trechos": "Texts about the installation",
+ "tum.expovideo.title": "The exhibition on video",
+ "tum.expovideo.sub": "Two long records made at CCBB Brasília: the guided tour and the round table with the curators.",
+ "tum.expovideo.visita": "Guided tour",
+ "tum.expovideo.roda": "Round table",
+ "dep.live.title": "Live with Wagner Barja",
+ "dep.live.lede": "An open conversation about the artist's path, curating and the place of art in Brasília.",
+ "dep.live.note": "Recorded stream, shown here in full.",
+ "obra.aula": "Lecture — Jardim Epicuro"
 };
