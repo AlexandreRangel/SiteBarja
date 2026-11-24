@@ -135,7 +135,7 @@ window.BARJA_EN = {
  "loop.tumulto": "Tumulto III",
  "loop.profeta": "O Profeta",
  "obras.video.title": "The work in motion",
- "obras.video.count": "9 videos",
+ "obras.video.count": "10 videos",
  "obras.video.sub": "Interventions, performances and videos by Wagner Barja — light versions, played directly on the site.",
  "tum.film.title": "Film of the exhibition",
  "tum.film.note": "Video record of the Experiência Tumulto III exhibition, at CCBB Brasília (2015).",
@@ -164,5 +164,6 @@ window.BARJA_EN = {
  "obra.prev": "← Previous work",
  "obra.next": "Next work →",
  "obra.all": "All works",
- "filters.all": "All"
+ "filters.all": "All",
+ "obra.watch": "Watch the video"
 };
