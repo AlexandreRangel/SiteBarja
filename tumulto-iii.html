@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="assets/css/style.css" />
 <link rel="stylesheet" href="assets/css/video.css" />
 <link rel="stylesheet" href="assets/css/work.css" />
+<link rel="stylesheet" href="assets/css/visual.css" />
 <style>
   .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
   .gallery figure { margin: 0; }
@@ -31,7 +32,7 @@
 <div id="include-header"></div>
 
 <main id="main">
-  <section class="page-head">
+  <section class="page-head" data-bg="assets/img/tumulto-iii/thumbs/p011_x31.jpg">
     <div class="container">
       <p class="kicker">Experiência · CCBB Brasília, 2015</p>
       <h1>Tumulto III</h1>
@@ -40,21 +41,25 @@
   </section>
     <section class="section section--soft">
     <div class="container">
-      <h2 data-i18n="tum.expo.title">A exposição</h2>
+      <h2 class="reveal" data-i18n="tum.expo.title">A exposição</h2>
       <p data-i18n-key="tumulto.p1">O Ministério da Cultura e o Banco do Brasil apresentam <em>Experiência Tumulto III</em>, um panorama da produção artística de Wagner Barja, artista radicado na capital federal. A mostra revela uma obra “altamente coesa” que, constituída ao longo de três décadas, sempre foi marcada pelo caráter experimental, irreverente e reflexivo, pelo trânsito por diversas mídias e linguagens artísticas, pelo cruzamento de diferentes domínios, saberes e sensibilidades.</p>
       <p data-i18n-key="tumulto.p2">A exposição conta com trinta obras que evidenciam as diversas linguagens com as quais o artista trabalha — poesia visual, vídeos e fotografias, esculturas e instalações, performances e intervenções urbanas — e com uma instalação inédita, “Jonas”.</p>
       <p class="muted" data-i18n-key="tumulto.p3">Centro Cultural Banco do Brasil, texto institucional do catálogo (2015).</p>
     </div>
   </section>
 
-  <section class="section">
+    <figure class="band" data-bg="assets/img/tumulto-iii/thumbs/p076_x348.jpg">
+    <figcaption class="band-cap">Jonas — instalação multimídia inédita, Experiência Tumulto III (CCBB, 2015)</figcaption>
+  </figure>
+
+<section class="section">
     <div class="container wide">
       <div class="media-head">
-        <h2 data-i18n="tum.expovideo.title">A exposição em vídeo</h2>
+        <h2 class="reveal" data-i18n="tum.expovideo.title">A exposição em vídeo</h2>
         <span class="media-count">113 minutos</span>
       </div>
       <p class="muted" data-i18n="tum.expovideo.sub">Dois registros longos feitos no CCBB Brasília: a visita guiada e a roda de conversa com as curadoras.</p>
-      <div class="vgrid">
+      <div class="reveal vgrid">
         <button class="vcard" type="button"
           data-video="assets/video/longos/visita-guiada.mp4"
           data-poster="assets/video/posters/longos-visita-guiada.jpg"
@@ -77,7 +82,7 @@
 
   <section class="section">
     <div class="container">
-      <h2 data-i18n="tum.curad.title">Experiência Tumulto III</h2>
+      <h2 class="reveal" data-i18n="tum.curad.title">Experiência Tumulto III</h2>
       <p class="lede-large" data-i18n-key="tumulto.p4">“Vemos por enigmas, ouvimos por dissonâncias. É esse lugar fora do lugar, que Barja não cessa de abrir. Por isso, suspeito que essa escrita-arte ao lado é, antes de tudo, ‘artesemnome’.”</p>
       <p data-i18n-key="tumulto.p5">Marisa Flórido César, curadora — texto de abertura do catálogo. Barja é um subversor da codificação da vida e da arte: apropria-se de ícones e mitos, textos e objetos, conceitos e saberes, e os associa de modo improvável, por vezes risível, desvelando as arbitrariedades dos signos e dos discursos. João Batista encontra-se com outro João, o Beuys; o sol/olho de Goethe transforma-se na quinta nota da escala; o olho converte-se no olho-ânus de Bataille.</p>
     </div>
@@ -85,9 +90,9 @@
 
   <section class="section">
     <div class="container">
-      <h2 data-i18n="tum.index.title">Índice de obras</h2>
+      <h2 class="reveal" data-i18n="tum.index.title">Índice de obras</h2>
       <p class="muted" data-i18n-key="tumulto.p6">Todos os registros do catálogo — da Antologia da obra (1985–2015) às vídeo intervenções e à instalação Jonas. Cada obra reúne os textos que falam dela. Nenhuma obra ficou de fora.</p>
-      <div class="works-grid">
+      <div class="reveal works-grid">
 <a class="wcard" id="profeta" href="obra/o-profeta-e-a-jaguatirica.html">
           <img src="assets/img/tumulto-iii/thumbs/p011_x31.jpg" alt="O Profeta e a Jaguatirica" loading="lazy" />
           <span class="wcard-body"><span class="wcard-title">O Profeta e a Jaguatirica</span>
@@ -189,7 +194,7 @@
 
   <section class="section section--soft">
     <div class="container">
-      <h2 data-i18n="tum.video.title">Vídeo intervenções</h2>
+      <h2 class="reveal" data-i18n="tum.video.title">Vídeo intervenções</h2>
       <p data-i18n-key="tumulto.p7">Registros em vídeo das intervenções e performances de Wagner Barja: <em>A Vitória do Gallo</em> (Cachoeira do Arari, Ilha de Marajó — Funarte) e <em>Despacho na Duna</em>, crítica ao circuito de arte.</p>
       <div class="u-split mt-4">
         <div class="u-media">
@@ -218,7 +223,7 @@
   <section class="section section--soft water-stage" id="jonas-sec">
     <div class="water-bg" data-loop="assets/video/jonas/agua-fundo.mp4" data-poster="assets/video/posters/jonas-agua-fundo.jpg" aria-hidden="true"></div>
     <div class="container">
-      <h2 data-i18n="tum.jonas.title">Jonas — instalação inédita</h2>
+      <h2 class="reveal" data-i18n="tum.jonas.title">Jonas — instalação inédita</h2>
       <p><a class="lede-large" href="obra/jonas.html">Ver a página da obra — 25 imagens e os vídeos →</a></p>
       <p class="lede-large" data-i18n-key="tumulto.p8">Jonas, o profeta desobediente, é engolido por uma baleia em alto mar e lá fica por três dias, em câmara escura. Barja, o artista tumultuador, devolve o visitante a esse ventre: águas projetadas, mônadas abertas, palavra e imagem em suspensão.</p>
       <p data-i18n-key="tumulto.p9">As páginas seguintes do catálogo documentam a instalação multimídia inédita criada para <em>Experiência Tumulto III</em>, com texto de Maria Thereza Azevedo (“Jonas: deslocamentos e repetições em instalação multimídia”) e de Antônio Miranda (“Verbivocovisualidade na instalação Jonas”).</p>
@@ -247,7 +252,7 @@
 
   <section class="section">
     <div class="container">
-      <h2 data-i18n="tum.jonas.imgs">Jonas em imagens</h2>
+      <h2 class="reveal" data-i18n="tum.jonas.imgs">Jonas em imagens</h2>
       <div class="gallery"><figure><a href="assets/img/tumulto-iii/full/p076_x348.jpeg" data-lightbox="assets/img/tumulto-iii/full/p076_x348.jpeg" data-alt="Obra de Wagner Barja — página 76"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p076_x348.jpg" alt="Obra de Wagner Barja — página 76"/></a><figcaption>Página 76</figcaption></figure>
 <figure><a href="assets/img/tumulto-iii/full/p077_x354.jpeg" data-lightbox="assets/img/tumulto-iii/full/p077_x354.jpeg" data-alt="Obra de Wagner Barja — página 77"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p077_x354.jpg" alt="Obra de Wagner Barja — página 77"/></a><figcaption>Página 77</figcaption></figure>
 <figure><a href="assets/img/tumulto-iii/full/p079_x361.jpeg" data-lightbox="assets/img/tumulto-iii/full/p079_x361.jpeg" data-alt="Obra de Wagner Barja — página 79"><img class="lb-thumb" loading="lazy" src="assets/img/tumulto-iii/thumbs/p079_x361.jpg" alt="Obra de Wagner Barja — página 79"/></a><figcaption>Página 79</figcaption></figure>
@@ -279,5 +284,6 @@
 <script src="assets/js/main.js"></script>
 <script src="assets/js/video.js"></script>
 <script src="assets/js/i18n.js"></script>
+<script src="assets/js/visual.js"></script>
 </body>
 </html>

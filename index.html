@@ -10,13 +10,14 @@
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/css/style.css" />
 <link rel="stylesheet" href="assets/css/video.css" />
+<link rel="stylesheet" href="assets/css/visual.css" />
 </head>
 <body data-page="home" data-i18n-content="assets/lang/paginas/home">
 <a class="skip-link" href="#main">Pular para o conteúdo</a>
 <div id="include-header"></div>
 
 <main id="main">
-  <section class="hero">
+  <section class="hero" data-bg="assets/img/tumulto-iii/thumbs/p076_x348.jpg">
     <div class="container wide">
       <div class="u-split">
         <div class="u-text">
@@ -41,12 +42,16 @@
     </div>
   </section>
 
+  <figure class="band" data-bg="assets/img/tumulto-iii/thumbs/p045_x193.jpg">
+    <figcaption class="band-cap">Cultura x Natureza = Barbárie — instalação, 1997</figcaption>
+  </figure>
+
   <section class="section">
     <div class="container">
-      <h2 data-i18n="home.areas.title">Grandes áreas do site</h2>
+      <h2 class="reveal" data-i18n="home.areas.title">Grandes áreas do site</h2>
       <p class="muted" data-i18n="home.areas.sub">Navegue pela obra, pelos livros e pela trajetória deste artista multifacetado.</p>
 
-      <div class="grid-cards">
+      <div class="reveal grid-cards">
         <a class="card" href="tumulto-iii.html">
           <span class="card-num" data-i18n="card.tumulto.kicker">Experiência</span>
           <h3 class="card-title" data-i18n="card.tumulto.title">Tumulto III</h3>
@@ -95,7 +100,7 @@
   <section class="section">
     <div class="container wide">
       <div class="media-head">
-        <h2 data-i18n="home.motion.title">A obra em movimento</h2>
+        <h2 class="reveal" data-i18n="home.motion.title">A obra em movimento</h2>
         <a class="media-count" href="depoimentos.html" data-i18n="home.motion.link">depoimentos →</a>
       </div>
       <p class="muted" data-i18n="home.motion.sub">Fragmentos de instalações, intervenções e vídeos — trechos curtos, exibidos em laço.</p>
@@ -110,7 +115,7 @@
 
   <section class="section section--soft">
     <div class="container">
-      <h2 data-i18n="home.sobre.title">Sobre</h2>
+      <h2 class="reveal" data-i18n="home.sobre.title">Sobre</h2>
       <p data-i18n="home.sobre.p1">
         Nascido no Rio de Janeiro, Wagner Pacheco Barja construiu uma trajetória rara: artista com obra em
         coleções como o Museu de Arte do Rio (MAR), o Museu Nacional de Belas Artes, o Museu de Arte de
@@ -149,5 +154,6 @@
 <script src="assets/js/main.js"></script>
 <script src="assets/js/video.js"></script>
 <script src="assets/js/i18n.js"></script>
+<script src="assets/js/visual.js"></script>
 </body>
 </html>

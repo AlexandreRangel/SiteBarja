@@ -1,0 +1,255 @@
+/* ==========================================================================
+   Site Wagner Barja — camada visual
+   Carregado por último: escala tipográfica maior, fundos de imagem
+   e design de rolagem (revelação leve + barra de progresso).
+   ========================================================================== */
+
+/* ---------- 1. escala tipográfica legível ---------- */
+
+:root {
+  --ink-faint: #b3ada0;      /* metadados: contraste ainda maior */
+  --maxw: 44rem;
+}
+
+body {
+  font-size: 1.28rem;        /* 20,5px */
+  line-height: 1.66;
+}
+
+p { margin: 0 0 1.15em; }
+
+h1 { line-height: 1.08; }
+h2 { line-height: 1.15; letter-spacing: -0.012em; }
+h3 { font-size: 1.62rem; }
+h4 { font-size: 1.36rem; }
+
+/* rótulos e metadados: nada abaixo de 13px */
+
+.kicker,
+.hero .kicker,
+.page-head .kicker,
+.work-head .kicker { font-size: 0.94rem; letter-spacing: 0.2em; }
+
+.lede,
+.hero .lede,
+.page-head .lede,
+.work-lede { font-size: 1.4rem; line-height: 1.55; }
+
+.hero .subtitle { font-size: 1.62rem; }
+
+.pub-list .pub-title { font-size: 1.32rem; }
+.pub-list .pub-meta { font-size: 1rem; line-height: 1.45; }
+.pub-list .pub-year { font-size: 1.05rem; }
+.pub-list li::before { font-size: 0.95rem; }
+.pub-list li { padding: 1.35rem 0; }
+
+.trecho p { font-size: 1.12rem; line-height: 1.62; }
+.trecho-fonte { font-size: 0.85rem; letter-spacing: 0.06em; }
+.trecho-mais > summary { font-size: 1rem; padding: 0.9rem 0; }
+
+.quote-list blockquote p { font-size: 1.62rem; }
+.quote-list cite { font-size: 1rem; }
+
+figure figcaption,
+.work-hero figcaption,
+.vloop figcaption { font-size: 0.9rem; }
+.vnote,
+.media-count { font-size: 0.9rem; }
+
+.card .card-title { font-size: 1.62rem; }
+.card p { font-size: 1.1rem; }
+.card .card-num { font-size: 0.84rem; letter-spacing: 0.2em; }
+
+.wcard .wcard-title { font-size: 1.2rem; }
+.wcard .wcard-meta { font-size: 0.84rem; letter-spacing: 0.06em; }
+
+.vcard .vtitle { font-size: 1.28rem; }
+.vcard .vsub { font-size: 0.84rem; letter-spacing: 0.12em; }
+
+.work-nav a span { font-size: 0.84rem; }
+.work-nav a strong { font-size: 1.26rem; }
+.work-nav .wn-index { font-size: 0.9rem; }
+.crumbs { font-size: 0.94rem; }
+.work-src { font-size: 0.92rem; }
+
+.filters button { font-size: 0.95rem; padding: 0 1rem; }
+.lang-btn { font-size: 0.92rem; }
+.nav-menu a { font-size: 0.96rem; }
+.site-footer { font-size: 0.95rem; }
+.lb-hint { font-size: 0.9rem; }
+
+/* no celular, o corpo ganha respiro sem estourar a linha */
+@media (max-width: 640px) {
+  body { font-size: 1.2rem; }
+  .lede, .hero .lede, .page-head .lede, .work-lede { font-size: 1.24rem; }
+  .pub-list .pub-meta { font-size: 0.95rem; }
+  .trecho p { font-size: 1.08rem; }
+}
+
+/* ---------- 2. fundos de imagem ---------- */
+
+/* faixa de imagem no topo de cada página (usa a obra como atmosfera) */
+.page-head,
+.hero,
+.work-head {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.page-head::before,
+.hero::before,
+.work-head::before {
+  content: "";
+  position: absolute;
+  inset: -6%;
+  z-index: -2;
+  background-image: var(--bg-img, none);
+  background-size: cover;
+  background-position: center 35%;
+  filter: blur(18px) saturate(1.05);
+  opacity: 0.5;
+  transform: translateY(var(--shift, 0)) scale(1.08);
+  will-change: transform;
+}
+
+/* véu escuro para garantir contraste do texto sobre a imagem */
+.page-head::after,
+.hero::after,
+.work-head::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg, rgba(16, 16, 20, 0.62) 0%, rgba(16, 16, 20, 0.88) 62%, var(--bg) 100%),
+    radial-gradient(1200px 500px at 78% -10%, rgba(217, 180, 91, 0.13), transparent 62%);
+}
+
+.page-head { padding: 4.4rem 0 2.6rem; }
+.hero { padding: clamp(4rem, 11vw, 8rem) 0 clamp(3rem, 8vw, 5.5rem); }
+
+/* faixa editorial entre seções: imagem larga e curta, como respiro visual */
+.band {
+  position: relative;
+  isolation: isolate;
+  min-height: clamp(220px, 38vw, 420px);
+  display: grid;
+  align-items: end;
+  margin: 0;
+  overflow: hidden;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.band::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-image: var(--bg-img, none);
+  background-size: cover;
+  background-position: center 45%;
+  opacity: 0.92;
+  transform: scale(1.02);
+  filter: saturate(1.08) contrast(1.05);
+}
+.band::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(16,16,20,0.28) 0%, rgba(16,16,20,0.55) 55%, rgba(16,16,20,0.94) 100%);
+}
+.band .band-cap {
+  margin: 0;
+  padding: 1.1rem 1.25rem 1.4rem;
+  max-width: 60rem;
+  font-family: var(--font-ui);
+  font-size: 1.02rem;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  text-transform: none;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.85);
+}
+
+/* espaçamento mais generoso entre seções: respiro editorial */
+.section { padding: 5.5rem 0; }
+@media (max-width: 640px) { .section { padding: 3.8rem 0; } }
+
+/* ---------- 3. design de rolagem ---------- */
+
+/* barra de progresso da leitura */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  background: linear-gradient(90deg, var(--accent), #efe0b4);
+  z-index: 90;
+  pointer-events: none;
+}
+
+/* revelação suave ao entrar na viewport (leve: só opacity + translate) */
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+}
+.reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* deslocamento sutil da imagem de fundo conforme a página rola */
+@media (prefers-reduced-motion: no-preference) and (min-width: 900px) {
+  .page-head::before,
+  .hero::before,
+  .work-head::before {
+    transition: transform 0.2s linear;
+  }
+}
+
+/* link "topo" discreto */
+.to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 80;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--ink-faint);
+  border-radius: 50%;
+  background: rgba(24, 24, 30, 0.92);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s var(--ease), border-color 0.2s var(--ease);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+.to-top.is-visible { opacity: 1; pointer-events: auto; }
+.to-top:hover { border-color: var(--accent); color: var(--accent); }
+
+/* acessibilidade: sem animação quando o sistema pede */
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .page-head::before, .hero::before, .work-head::before { filter: blur(16px); }
+}
+
+/* ajustes finos pedidos na revisão visual */
+.crumbs { color: var(--ink-dim); }
+.crumbs a { color: var(--ink); }
+.lang-btn { min-width: 44px; }
+@media (max-width: 760px) {
+  .lang-btn { min-width: 40px; padding: 0 0.4rem; }
+  .band { min-height: 200px; }
+  .band .band-cap { font-size: 0.95rem; }
+}
