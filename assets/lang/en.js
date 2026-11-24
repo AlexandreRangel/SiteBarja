@@ -53,7 +53,7 @@ window.BARJA_EN = {
  "obras.head.title": "Works",
  "obras.head.lede": "Wagner Barja's production in installations, objects, video and interventions, in chronological order — with links to the book pages where each work appears with images.",
  "obras.all.title": "All works",
- "obras.all.muted": "22 works, from the earliest to the most recent. Click a title to see the work on the book pages.",
+ "obras.all.muted": "27 works, from the earliest to the most recent. Click an image to open the work page, with photographs, critical texts and videos.",
  "obras.imprensa.title": "Press and clippings",
  "obras.imprensa.muted": "Articles that discuss or reproduce works by Wagner Barja.",
  "expo.head.kicker": "Trajectory",
@@ -154,5 +154,15 @@ window.BARJA_EN = {
  "dep.live.title": "Live with Wagner Barja",
  "dep.live.lede": "An open conversation about the artist's path, curating and the place of art in Brasília.",
  "dep.live.note": "Recorded stream, shown here in full.",
- "obra.aula": "Lecture — Jardim Epicuro"
+ "obra.aula": "Lecture — Jardim Epicuro",
+ "crumb.home": "Home",
+ "crumb.works": "Works",
+ "obra.about": "About the work",
+ "obra.voices": "Texts about this work",
+ "obra.source": "Source:",
+ "obra.more": "See all excerpts",
+ "obra.prev": "← Previous work",
+ "obra.next": "Next work →",
+ "obra.all": "All works",
+ "filters.all": "All"
 };

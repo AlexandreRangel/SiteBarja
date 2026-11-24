@@ -50,7 +50,7 @@
 
   function loadDict(cb) {
     var s = document.createElement("script");
-    s.src = "assets/lang/en.js"; // dict setado como window.BARJA_EN
+    s.src = (window.BARJA_BASE || "") + "assets/lang/en.js"; // dict setado como window.BARJA_EN
     s.onload = function () {
       dict = window.BARJA_EN || null;
       cb();

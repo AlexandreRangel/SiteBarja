@@ -7,6 +7,9 @@
   "use strict";
 
   var page = document.body.getAttribute("data-page") || "";
+  // páginas dentro de subpastas (ex.: /obra/) precisam de "../" nos links do shell
+  var BASE = /\/obra\//.test(window.location.pathname) ? "../" : "";
+  window.BARJA_BASE = BASE;
 
   function esc(s) {
     return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -14,13 +17,13 @@
 
   function link(href, label, key) {
     var active = page === key ? ' aria-current="page"' : "";
-    return '<li><a href="' + href + '"' + active + ' data-i18n="nav.' + key + '">' + label + "</a></li>";
+    return '<li><a href="' + BASE + href + '"' + active + ' data-i18n="nav.' + key + '">' + label + "</a></li>";
   }
 
   var headerHTML =
     '<header class="site-header">' +
     '  <div class="nav">' +
-    '    <a class="brand" href="index.html">Wagner Barja<small data-i18n="nav.brand.sub">artista · curador · educador</small></a>' +
+    '    <a class="brand" href="' + BASE + 'index.html">Wagner Barja<small data-i18n="nav.brand.sub">artista · curador · educador</small></a>' +
     '    <div class="nav-right">' +
     '      <button id="lang-toggle" class="lang-toggle" aria-label="Switch language to English">EN</button>' +
     '      <button class="nav-toggle" aria-label="Abrir menu" data-i18n="menu.open">Menu</button>' +

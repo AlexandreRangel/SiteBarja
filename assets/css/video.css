@@ -325,7 +325,7 @@
 
 .nav-menu a { white-space: nowrap; }
 
-@media (min-width: 761px) and (max-width: 1180px) {
+@media (min-width: 761px) and (max-width: 1420px) {
   .nav-menu { gap: 0; }
   .nav-menu a { padding: 0.45rem 0.5rem; font-size: 0.86rem; }
   .brand small { display: none; }
@@ -352,4 +352,12 @@
   .lang-toggle { min-width: 2.9rem; min-height: 2.75rem; padding: 0.55rem 0.6rem; }
   .nav-toggle { min-height: 2.75rem; padding: 0.55rem 0.7rem; }
   .hero .lede { font-size: 1.14rem; }
+}
+
+/* o menu tem 10 itens: em larguras médias, deixa rolar em vez de estourar a largura */
+@media (min-width: 761px) {
+  .nav { min-width: 0; }
+  .nav-menu { min-width: 0; }
+  .nav > nav { min-width: 0; overflow-x: auto; scrollbar-width: none; }
+  .nav > nav::-webkit-scrollbar { display: none; }
 }
