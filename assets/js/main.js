@@ -36,6 +36,8 @@
   var lb = document.querySelector(".lightbox");
   if (!lb) return;
 
+  var lastFocused = null;
+
   var lbImg = lb.querySelector("img");
   var lbClose = lb.querySelector(".lb-close");
   var lbHint = lb.querySelector(".lb-hint");
@@ -49,19 +51,40 @@
   }
 
   function openLightbox(src, alt) {
+    lastFocused = document.activeElement;
     lbImg.src = src;
     lbImg.alt = alt || "";
     scale = 1; tx = 0; ty = 0;
     applyTransform();
     lb.setAttribute("data-open", "true");
+    lb.setAttribute("aria-hidden", "false");
+    lb.setAttribute("role", "dialog");
+    lb.setAttribute("aria-modal", "true");
+    lb.setAttribute("aria-label", alt ? "Imagem ampliada: " + alt : "Imagem ampliada");
     document.body.style.overflow = "hidden";
+    if (lbClose) lbClose.focus();
     if (lbHint) hint("roda do mouse ou pinça para dar zoom · Esc fecha");
   }
 
   function closeLightbox() {
     lb.setAttribute("data-open", "false");
+    lb.setAttribute("aria-hidden", "true");
+    lb.removeAttribute("aria-modal");
+    lb.removeAttribute("role");
+    lb.removeAttribute("aria-label");
     document.body.style.overflow = "";
+    if (lastFocused && lastFocused.focus) lastFocused.focus();
   }
+
+  // retém o foco dentro do lightbox enquanto aberto
+  lb.addEventListener("keydown", function (e) {
+    if (lb.getAttribute("data-open") !== "true" || e.key !== "Tab") return;
+    var focaveis = lb.querySelectorAll("button, [href], [tabindex]:not([tabindex='-1'])");
+    if (!focaveis.length) return;
+    var primeiro = focaveis[0], ultimo = focaveis[focaveis.length - 1];
+    if (e.shiftKey && document.activeElement === primeiro) { e.preventDefault(); ultimo.focus(); }
+    else if (!e.shiftKey && document.activeElement === ultimo) { e.preventDefault(); primeiro.focus(); }
+  });
 
   // todos os elementos com data-lightbox abrem o lightbox
   document.querySelectorAll("[data-lightbox]").forEach(function (el) {

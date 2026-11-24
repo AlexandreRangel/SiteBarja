@@ -287,3 +287,12 @@
   border-color: var(--accent);
 }
 .wcard[hidden] { display: none; }
+
+/* grade de obras em 2 colunas no celular (28 obras em 1 coluna = 9.900px de rolagem) */
+@media (max-width: 640px) {
+  .works-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.7rem; }
+  .wcard .wcard-title { font-size: 1rem; }
+  .wcard .wcard-meta { font-size: 0.68rem; letter-spacing: 0.08em; }
+  .filters button { min-height: 44px; }
+  .crumbs a { min-height: 44px; display: inline-flex; align-items: center; }
+}

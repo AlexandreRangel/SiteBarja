@@ -10,7 +10,7 @@
   --bg-raised: #1e1e26;
   --ink: #f2efe9;          /* texto principal */
   --ink-dim: #c7c2b8;      /* texto secundário */
-  --ink-faint: #8b867a;    /* metadados */
+  --ink-faint: #a8a294;    /* metadados (contraste AA) */
   --line: #33323a;         /* bordas */
   --accent: #d9b45b;       /* dourado sóbrio */
   --accent-ink: #12100a;
@@ -433,6 +433,7 @@ figure figcaption { font-family: var(--font-ui); font-size: 0.85rem; color: var(
 .muted { color: var(--ink-faint); }
 @media (max-width: 640px) {
   .pub-list li { grid-template-columns: 2.6rem 1fr; }
-  .pub-list .pub-year { grid-column: 2; }
+  .pub-list .pub-meta { grid-column: 2 / -1; }
+  .pub-list .pub-year { grid-column: 2 / -1; }
   .ugc-table-wrap { overflow-x: auto; }
 }

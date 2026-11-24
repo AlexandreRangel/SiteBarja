@@ -361,3 +361,16 @@
   .nav > nav { min-width: 0; overflow-x: auto; scrollbar-width: none; }
   .nav > nav::-webkit-scrollbar { display: none; }
 }
+
+/* ---------- correções de acessibilidade (crítica de design) ---------- */
+
+.brand small,
+.wcard .wcard-meta,
+.work-thumbs + * ,
+.trecho-fonte,
+.lb-hint { letter-spacing: 0.12em; }
+
+/* alvos de toque >= 44px */
+.filters button { min-height: 44px; display: inline-flex; align-items: center; }
+.work-nav .wn-index { min-height: 44px; display: inline-flex; align-items: center; }
+.crumbs a { display: inline-flex; align-items: center; min-height: 44px; }
