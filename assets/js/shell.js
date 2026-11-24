@@ -25,7 +25,11 @@
     '  <div class="nav">' +
     '    <a class="brand" href="' + BASE + 'index.html">Wagner Barja<small data-i18n="nav.brand.sub">artista · curador · educador</small></a>' +
     '    <div class="nav-right">' +
-    '      <button id="lang-toggle" class="lang-toggle" aria-label="Switch language to English">EN</button>' +
+    '      <div class="lang-group" role="group" aria-label="Idioma / Language / Idioma">' +
+    '        <button type="button" class="lang-btn" data-lang="pt" aria-pressed="false">PT</button>' +
+    '        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>' +
+    '        <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>' +
+    '      </div>' +
     '      <button class="nav-toggle" aria-label="Abrir menu" data-i18n="menu.open">Menu</button>' +
     "    </div>" +
     '    <nav aria-label="Principal">' +
