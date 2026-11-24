@@ -30,6 +30,7 @@
     link("index.html", "Início", "home") +
     link("tumulto-iii.html", "Tumulto III", "tumulto") +
     link("antologia.html", "Antologia", "antologia") +
+    link("depoimentos.html", "Depoimentos", "depoimentos") +
     link("obras.html", "Obras", "obras") +
     link("exposicoes.html", "Exposições", "exposicoes") +
     link("curadorias.html", "Curadorias", "curadorias") +

@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/css/style.css" />
+<link rel="stylesheet" href="assets/css/video.css" />
 </head>
 <body data-page="home">
 <a class="skip-link" href="#main">Pular para o conteúdo</a>
@@ -16,18 +17,27 @@
 
 <main id="main">
   <section class="hero">
-    <div class="container">
-      <p class="kicker" data-i18n="home.kicker">Arte · Curadoria · Educação · Museus</p>
-      <h1>Wagner Barja</h1>
-      <p class="subtitle" data-i18n="home.subtitle">Mais de cinquenta anos de produção — do desenho e da escultura à arte computacional e à gestão de museus.</p>
-      <p class="lede" data-i18n="home.lede">
-        Artista plástico, curador, educador e agitador cultural. Mestre em Arte e Tecnologias da Imagem pela
-        Universidade de Brasília (UnB), com período sanduíche na Universidad Complutense de Madrid, hoje
-        doutorando em Ciência da Informação pela mesma UnB, e detentor de notório saber em História e Teoria
-        da Arte, Plástica e Arte-Educação pelo Conselho Superior de Educação do MEC. Foi diretor do Espaço
-        Cultural 508 Sul/Renato Russo, coordenador pedagógico da Casa da Cultura da América Latina e diretor
-        do Museu Nacional da República — e segue expondo, publicando e formando museus.
-      </p>
+    <div class="container wide">
+      <div class="u-split">
+        <div class="u-text">
+          <p class="kicker" data-i18n="home.kicker">Arte · Curadoria · Educação · Museus</p>
+          <h1>Wagner Barja</h1>
+          <p class="subtitle" data-i18n="home.subtitle">Mais de cinquenta anos de produção — do desenho e da escultura à arte computacional e à gestão de museus.</p>
+          <p class="lede" data-i18n="home.lede">
+            Artista plástico, curador, educador e agitador cultural. Mestre em Arte e Tecnologias da Imagem pela
+            UnB, com período sanduíche em Madri, doutorando em Ciência da Informação e detentor de notório saber
+            em História e Teoria da Arte pelo MEC. Dirigiu o Espaço Cultural Renato Russo, a Casa da Cultura da
+            América Latina e o Museu Nacional da República — e segue expondo, publicando e formando museus.
+          </p>
+        </div>
+        <div class="u-media">
+          <figure class="vloop vloop--portrait" data-loop="assets/video/loops/personalidades-loop.mp4"
+                  data-poster="assets/video/posters/loops-personalidades-loop.jpg"
+                  data-alt="Retrato com coroa de frutas, do vídeo Personalidades">
+            <figcaption data-i18n="home.hero.note">Personalidades — vídeo da série de retratos</figcaption>
+          </figure>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -81,6 +91,23 @@
     </div>
   </section>
 
+
+  <section class="section">
+    <div class="container wide">
+      <div class="media-head">
+        <h2 data-i18n="home.motion.title">A obra em movimento</h2>
+        <a class="media-count" href="depoimentos.html" data-i18n="home.motion.link">depoimentos →</a>
+      </div>
+      <p class="muted" data-i18n="home.motion.sub">Fragmentos de instalações, intervenções e vídeos — trechos curtos, exibidos em laço.</p>
+      <div class="strip mt-2">
+        <figure class="vloop" data-loop="assets/video/loops/jonas-loop.mp4" data-poster="assets/video/posters/loops-jonas-loop.jpg"><figcaption data-i18n="loop.jonas">Jonas</figcaption></figure>
+        <figure class="vloop" data-loop="assets/video/loops/gallo-loop.mp4" data-poster="assets/video/posters/loops-gallo-loop.jpg"><figcaption data-i18n="loop.gallo">A Vitória do Gallo</figcaption></figure>
+        <figure class="vloop" data-loop="assets/video/loops/dunas-loop.mp4" data-poster="assets/video/posters/loops-dunas-loop.jpg"><figcaption data-i18n="loop.dunas">Despacho na Duna</figcaption></figure>
+        <figure class="vloop" data-loop="assets/video/loops/tumulto-loop.mp4" data-poster="assets/video/posters/loops-tumulto-loop.jpg"><figcaption data-i18n="loop.tumulto">Tumulto III</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
   <section class="section section--soft">
     <div class="container">
       <h2 data-i18n="home.sobre.title">Sobre</h2>
@@ -120,6 +147,7 @@
 </div>
 <script src="assets/js/shell.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/video.js"></script>
 <script src="assets/js/i18n.js"></script>
 </body>
 </html>

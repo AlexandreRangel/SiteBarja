@@ -6,25 +6,31 @@
 (function () {
   "use strict";
 
-  /* ---------- menu mobile ---------- */
-  var toggle = document.querySelector(".nav-toggle");
-  var menu = document.querySelector(".nav-menu");
-  if (toggle && menu) {
-    toggle.addEventListener("click", function () {
-      var open = menu.getAttribute("data-open") === "true";
-      menu.setAttribute("data-open", open ? "false" : "true");
-      toggle.setAttribute("aria-expanded", open ? "false" : "true");
-    });
-    // fecha ao navegar
-    menu.addEventListener("click", function (e) {
-      if (e.target.closest("a")) {
-        menu.setAttribute("data-open", "false");
-        toggle.setAttribute("aria-expanded", "false");
-      }
-    });
-    toggle.setAttribute("aria-expanded", "false");
-    toggle.setAttribute("aria-controls", menu.id || "nav-menu");
-  }
+  /* ---------- menu mobile ----------
+     O header é injetado por shell.js no DOMContentLoaded, então o toggle pode
+     não existir no parse: usa delegação de evento no documento. */
+  document.addEventListener("click", function (e) {
+    var toggle = e.target.closest(".nav-toggle");
+    var menu = document.querySelector(".nav-menu");
+    if (!toggle || !menu) return;
+    if (toggle.hasAttribute("aria-controls") === false) {
+      toggle.setAttribute("aria-controls", menu.id || "nav-menu");
+    }
+    var open = menu.getAttribute("data-open") === "true";
+    menu.setAttribute("data-open", open ? "false" : "true");
+    toggle.setAttribute("aria-expanded", open ? "false" : "true");
+  });
+
+  // fecha ao navegar
+  document.addEventListener("click", function (e) {
+    var menu = document.querySelector(".nav-menu");
+    if (!menu || menu.getAttribute("data-open") !== "true") return;
+    if (e.target.closest(".nav-menu a")) {
+      menu.setAttribute("data-open", "false");
+      var toggle = document.querySelector(".nav-toggle");
+      if (toggle) toggle.setAttribute("aria-expanded", "false");
+    }
+  });
 
   /* ---------- lightbox com zoom ---------- */
   var lb = document.querySelector(".lightbox");
