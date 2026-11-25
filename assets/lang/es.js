@@ -166,4 +166,9 @@ window.BARJA_ES = {
  "obra.all": "Todas las obras",
  "filters.all": "Todas",
  "obra.watch": "Ver el video"
+,
+ "fotos.titulo": "Fotografías",
+ "fotos.fonte": "Registros de la obra — archivo del artista",
+ "fotos.expo": "La exposición",
+ "fotos.expo_sub": "Montaje, apertura y visita guiada en el CCBB Brasília."
 };

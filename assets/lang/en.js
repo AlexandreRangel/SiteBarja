@@ -166,4 +166,9 @@ window.BARJA_EN = {
  "obra.all": "All works",
  "filters.all": "All",
  "obra.watch": "Watch the video"
+,
+ "fotos.titulo": "Photographs",
+ "fotos.fonte": "Work records — artist's archive",
+ "fotos.expo": "The exhibition",
+ "fotos.expo_sub": "Installation, opening and guided visit at CCBB Brasília."
 };
