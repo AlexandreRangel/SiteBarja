@@ -274,3 +274,53 @@ figure figcaption,
   .fotos-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 0.7rem; }
   .fotos-grid figcaption { font-size: 0.84rem; }
 }
+
+/* menu em várias linhas: nada de rolagem horizontal no cabeçalho */
+.nav { flex-wrap: wrap; row-gap: 0.4rem; overflow: visible; }
+.nav > nav { flex: 0 1 auto; min-width: 0; }
+.nav-menu { flex-wrap: wrap; justify-content: flex-end; row-gap: 0.12rem; }
+.nav-menu a { font-size: 0.97rem; }
+
+/* entre 761 e 1099: menu equilibrado em 2 linhas de 5, topo compacto e não fixo */
+@media (min-width: 761px) and (max-width: 1099px) {
+  .nav { padding: 0.45rem 1rem; row-gap: 0.1rem; align-items: center; }
+  .nav-right { order: 0; }
+  .brand { font-size: 1.15rem; }
+  .lang-btn { min-width: 38px; }
+  .brand small { display: none; }
+  .nav > nav { flex: 1 1 100%; }
+  .nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 0.15rem 0.3rem;
+    justify-content: stretch;
+    max-width: 700px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .nav-menu a { padding: 0.26rem 0.35rem; font-size: 0.94rem; text-align: center; }
+  .site-header { position: static; }
+}
+
+/* metadados: tracking menor, como pediu a revisão */
+.brand small { letter-spacing: 0.12em; }
+
+/* Trajetória no celular: instituição e ano em linha inteira */
+@media (max-width: 640px) {
+  .pub-list li { grid-template-columns: 2.6rem 1fr; }
+  .pub-list .pub-meta, .pub-list .pub-year { grid-column: 1 / -1; }
+  .pub-list .pub-meta { margin-top: 0.35rem; }
+}
+
+/* catálogo de obras no celular: duas colunas */
+@media (max-width: 640px) {
+  .works-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)) !important; }
+}
+
+/* marca de idioma nos trechos (os catálogos são bilíngues) */
+.lang-tag {
+  display: inline-block; margin-left: 0.5rem; vertical-align: 0.15em;
+  font-family: var(--font-ui); font-size: 0.72rem; letter-spacing: 0.14em;
+  color: var(--accent); border: 1px solid rgba(217, 180, 91, 0.45);
+  border-radius: 0.2rem; padding: 0.05rem 0.32rem;
+}
